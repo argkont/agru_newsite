@@ -595,16 +595,19 @@ body{
       text-transform:@upper;
       margin-top:30px;
       margin:0 !important;
-      padding-bottom:30px;
+      //padding-bottom:30px;
       float:right;
+	  height:37px;
       .active{
         a{
           background-color:transparent !important;
           &:focus{
             color:@fontcolorh;
+			background-color:transparent !important;
           }
           &:hover{
             color:@fontcolorh;
+			background-color:transparent !important;
           }
         }
       }
@@ -612,6 +615,12 @@ body{
         padding:0 0 0 10px;
           a{
             .paddingimportant();
+			&:hover{
+            color:@fontcolorh;
+			border-bottom:5px solid @fontcolorh;
+			background-color:transparent !important;
+			height:37px;
+          }
           }
       }
     }
