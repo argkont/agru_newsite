@@ -14,6 +14,7 @@
 @bgall:#dcdbdb;
 @bgbox:#fff;
 @bgred:#c22820;
+@bgredo:#801a1e;
 @transbgw:rgba(255,255,255,0.7);
 @centerspan:0 auto;
 @upper:uppercase;
@@ -387,6 +388,38 @@ body{
 			vertical-align:top;
 		}
 	}
+	.more_credit{
+		background-color:@bgredo;
+		color:@linkscolor;
+		height:300px;
+		width:81%;
+		padding:5px 0 0 2%;
+		position:absolute;
+		z-index:99;
+		margin:520px 0 0 -72px;
+		h1{
+			font-size:24px;
+		}
+		.btn_oc{
+        width:20px;
+        height:20px;
+        .borderadius(@radius:10px;);
+        background-color:@bgred;
+        background-image:url('../img/icon_open_close.gif');
+        background-position:center 6px;
+        background-repeat:no-repeat;
+        cursor:@combtn;
+		margin:8px 0 0 10px;
+      }
+	  .cont_credits_buy{
+		height:300px;
+		width:74%;
+	  }
+	  @media (max-width:480px){
+		width:100% !important;
+		margin:-45px 0 0 0 !important;
+	  }
+	}
 }
   .paddingimportant();
   .oferta_top{
@@ -510,7 +543,7 @@ body{
         top:10px;
         right:5px;
         background-image:url('../img/icon_open_close.gif');
-        background-position:center 5px;
+        background-position:center 6px;
         background-repeat:no-repeat;
         cursor:@combtn;
         display:block !important;
@@ -810,8 +843,8 @@ footer{
 
 //STYLE DASH
 .cont_perf{
-	position:realtive;
-	overflow:hidden;
+	position:relative !important;
+	overflow:hidden !important;
 background-color:@bgbox;
 text-transform:@upper;
 color:@fontcolorh;

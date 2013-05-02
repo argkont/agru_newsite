@@ -101,7 +101,7 @@ jQuery(document).ready(function($){
 	  
 	  //script scroll creditos
 	  $a('.scroll_cre').slimScroll({
-      	  height: '450px',
+      	  height: '442px',
           width: '100%',
 		  color: '#801a1e',
 		  size: '5px',
@@ -116,5 +116,13 @@ jQuery(document).ready(function($){
 	  
 	  //script uniform
 	  $("select, #checksty").uniform();
-  
+	
+	  //script more credits
+	  $a('.btn_oc').click(function(){
+			$('.cont_credits_buy').toggle('fast', function(){
+				var $anima = $('.more_credit');
+				$(this).is(':hidden') ? $anima.animate({top:'0'},500) : $anima.animate({top:'-250px'},500);
+			});
+		});
+
 });
