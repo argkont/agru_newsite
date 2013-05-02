@@ -115,7 +115,7 @@ jQuery(document).ready(function($){
       });
 	  
 	  //script uniform
-	  $("select, #checksty").uniform();
+	  $("select, .checksty").uniform();
 	
 	  //script more credits
 	  $a('.btn_oc').click(function(){
