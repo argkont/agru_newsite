@@ -98,5 +98,8 @@ jQuery(document).ready(function($){
     	  railVisible : true,
 		  railOpacity: 1
       });
+	  
+	  //script uniform
+	  $("select, #checksty").uniform();
   
 });
