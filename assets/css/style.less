@@ -154,6 +154,12 @@
   .icon_cre{
     background-position:70px top;
   }
+.icons_cup{
+	width:20px;
+	height:13px;
+	background-image:url('../img/icon_view_cup.gif');
+	margin:4px 0 0 2px;
+}
 /*LOADING FILES STY FORMAT*/
 .load{
   width:100%;
@@ -308,6 +314,22 @@ body{
         li{
           width:220px;
 		  margin-right:9px;
+		  .cont_view{
+			.borderadius(@radius:3px 3px 0 0;);
+			background-color:@bgred;
+			width:36%;
+			margin-left:55%;
+			padding:0 3%;
+			a{
+				color:@linkscolor;
+			}
+		  }
+		  .cont_date{
+			width:96%;
+			background-color:@bgred;
+			color:@linkscolor;
+			padding:0 2%;
+		  }
         }
       }
       .cup_box{
