@@ -372,7 +372,22 @@ body{
         }
       }
     }
-  }
+	.total_price{
+		color:@linkscolor;
+		background-color:@bgred;
+		min-width:200px;
+		height:20px;
+		.borderadius(@radius:0 0 0 10px;);
+		padding:20px 10px;
+		margin:-10px -9px 10px 0;
+		font-size:20px;
+		span{
+			font-size:30px;
+			font-weight:bold;
+			vertical-align:top;
+		}
+	}
+}
   .paddingimportant();
   .oferta_top{
     max-width:1007px;
@@ -795,6 +810,8 @@ footer{
 
 //STYLE DASH
 .cont_perf{
+	position:realtive;
+	overflow:hidden;
 background-color:@bgbox;
 text-transform:@upper;
 color:@fontcolorh;

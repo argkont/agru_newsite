@@ -99,6 +99,21 @@ jQuery(document).ready(function($){
 		  railOpacity: 1
       });
 	  
+	  //script scroll creditos
+	  $a('.scroll_cre').slimScroll({
+      	  height: '450px',
+          width: '100%',
+		  color: '#801a1e',
+		  size: '5px',
+    	  position: 'right',
+    	  distance: '10px',
+    	  railColor: '#c22820',
+    	  alwaysVisible: true,
+    	  opacity: 1,
+    	  railVisible : true,
+		  railOpacity: 1
+      });
+	  
 	  //script uniform
 	  $("select, #checksty").uniform();
   
