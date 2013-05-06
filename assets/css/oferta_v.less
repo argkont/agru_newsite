@@ -1,0 +1,47 @@
+@import 'style_v.less';
+@opacit:rgba(81,20,135, 0.8);
+//ICONS
+.icons_v{
+  width:16px;
+  height:16px;
+  background-image:url('../img/icons_blancos.gif');
+  margin:2px 5px 0 0;
+}
+.oferta_viajes{
+	h1{
+		color:@linkscolor;
+		text-transform:@upper;
+		font-size:48px;
+		width:593px;
+		line-height:59px;
+		span{
+			background-color:@opacit;
+			padding:5px;
+			line-height:59px;
+		}
+	}
+	h2{
+		width:593px;
+		font-size:60px;
+		color:@bgred;
+	}
+	.link_btn_cont{
+		width:593px;
+		.icon_fav_v{
+			background-position:-20px top;
+		}
+		.icon_view_v{
+			background-position:0 top;
+		}
+		a{
+			color:@linkscolor;
+			min-width:100px;
+			padding:5px;
+			background-color:@bgred;
+			text-transform:@upper;
+			float:right;
+			margin-left:10px;
+			font-size:18px;
+		}
+	}
+}
