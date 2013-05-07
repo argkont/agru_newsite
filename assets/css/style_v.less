@@ -220,10 +220,13 @@ body{
     font-size:48px;
     width:593px;
     line-height:59px;
+	height:116px;
+	overflow:hidden;
     @media (max-width:768px){
       font-size:25px;
       width:300px;
       line-height:36px;
+	  height:108px !important;
     }
     span{
       background-color:@opacit;
@@ -495,6 +498,9 @@ body{
     .overflowhidd();
 	position:relative;
 	max-height:450px;
+	@media (min-width:600px) and (max-width:640px){
+		max-height:550px !important;
+	}
     h1.visible-desktop{
       color:@fontcolorh;
       font-size:60px;
@@ -507,6 +513,9 @@ body{
       color:@fontcolorh;
 	  max-height:87px;
 	  overflow:hidden;
+	  @media (min-width:600px) and (max-width:640px){
+		max-width:500px !important;
+	  }
       a{
         color:@fontcolorh;
         text-decoration:@nodecoration;
@@ -602,6 +611,9 @@ body{
       background-color:@transbgw;
       margin-top:-3.6%;
 	  z-index:99;
+	  @media (width:768px){
+		display:none;
+	  }
       .btn_oc{
         width:20px;
         height:20px;
@@ -888,7 +900,7 @@ footer{
    }
    .cont_oferta{
      padding:5px 5px 0;
-     width:308px;
+     //width:308px;
      h1{
        font-size:18px;
        color:#727175;
@@ -914,7 +926,7 @@ footer{
      }
    }
    .price_oferta{
-     width:308px;
+     //width:308px;
      background-color:@bgall;
      //bottom:-22px;
      height:37px;
@@ -933,6 +945,9 @@ footer{
        }
      h1{
        margin:0 10px 0 0 !important;
+	   @media (width:1024px){
+			font-size:30px !important;
+	   }
      }
 	 a{
 	 color:@bgred;
@@ -1188,15 +1203,15 @@ overflow:hidden;
    }
    .oferta_top{
      .fav{
-       margin-top:20px;
+       //margin-top:20px;
        position:absolute;
-       margin:-35px 0 0 180px;
+       //margin:-35px 0 0 180px;
      }
      h3{
        font-size:18px;
        margin:0;
        line-height:17px;
-       max-width:186px;
+       max-width:300px;
        font-weight:@fontnormal;
      }
     .buy_top{

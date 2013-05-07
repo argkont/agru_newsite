@@ -435,6 +435,9 @@ body{
     .overflowhidd();
 	position:relative;
 	max-height:450px;
+	@media (min-width:600px) and (max-width:640px){
+		max-height:550px !important;
+	}
     h1.visible-desktop{
       color:@fontcolorh;
       font-size:60px;
@@ -447,6 +450,9 @@ body{
       color:@fontcolorh;
 	  max-height:87px;
 	  overflow:hidden;
+	  @media (min-width:600px) and (max-width:640px){
+		max-width:500px !important;
+	  }
       a{
         color:@fontcolorh;
         text-decoration:@nodecoration;
@@ -542,6 +548,9 @@ body{
       background-color:@transbgw;
       margin-top:-3.6%;
 	  z-index:99;
+	  @media (width:768px){
+		display:none;
+	  }
       .btn_oc{
         width:20px;
         height:20px;
@@ -962,6 +971,7 @@ overflow:hidden;
    }
 }
 @media (width: 1024px){
+	
   .btn_back{
     margin-left:360px !important;
   }
@@ -1103,15 +1113,15 @@ overflow:hidden;
    }
    .oferta_top{
      .fav{
-       margin-top:20px;
+       //margin-top:20px;
        position:absolute;
-       margin:-35px 0 0 180px;
+       //margin:-35px 0 0 180px;
      }
      h3{
        font-size:18px;
        margin:0;
        line-height:17px;
-       max-width:186px;
+       max-width:300px;
        font-weight:@fontnormal;
      }
     .buy_top{
