@@ -8,16 +8,31 @@
   margin:2px 5px 0 0;
 }
 .oferta_viajes{
+	min-height:260px !important;
+	padding:30px 0 !important;
+	margin:10px 0;
 	h1{
 		color:@linkscolor;
 		text-transform:@upper;
 		font-size:48px;
 		width:593px;
 		line-height:59px;
+		@media (max-width:768px){
+			font-size:25px;
+			width:300px;
+			line-height:36px;
+		}
 		span{
 			background-color:@opacit;
 			padding:5px;
 			line-height:59px;
+			@media (max-width:768px){
+				line-height:20px;
+			}
+		}
+		a{
+			text-decoration:none;
+			color:@linkscolor;
 		}
 	}
 	h2{

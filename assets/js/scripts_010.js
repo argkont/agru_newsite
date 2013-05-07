@@ -25,18 +25,23 @@ jQuery(document).ready(function($){
   	isAnimated:true,
  	columnWidth: function( containerWidth ) {
 			if(containerWidth < 1200 && containerWidth>=980){
+				valor=(containerWidth)/3;
+				//alert("if grande "+containerWidth+" "+Math.floor(valor)+" "+$a('#posts').width());
+				return Math.floor(valor);
+				//return 330;
+			}else if(containerWidth < 980 && containerWidth>=768){
+				//alert("if mediano "+containerWidth+" "+(containerWidth/3)+" "+$a('#posts').width());
 				return containerWidth / 3;
-			}
-		//phone < 767
-		//tablet < 768 >979
-			if(containerWidth < 980 && containerWidth>=768){
-				return containerWidth / 3;
-			}
-		
-			if(containerWidth < 767){
+			}else if(containerWidth < 767){
+				//alert("if chico "+containerWidth+" "+(containerWidth/2)+" "+$a('#posts').width());
 				return containerWidth / 2;
+			}else{
+				//alert("if defecto "+containerWidth+" "+(containerWidth/3)+" "+$a('#posts').width());
+				return containerWidth / 3;
 			}
 		//return containerWidth / 2;
+		//phone < 767
+		//tablet < 768 >979
   		}
 	});
 	
@@ -49,7 +54,7 @@ jQuery(document).ready(function($){
 		$a('.btn_oc').click(function(){
 			$('.in_box_animate').toggle('fast', function(){
 				var $anima = $('.in_box');
-				$(this).is(':visible') ? $anima.animate({top:'-123px'},500) : $anima.animate({top:'0'},500);
+				$(this).is(':visible') ? $anima.animate({top:'191px'},500) : $anima.animate({top:'100%'},500);
 			});
 		});
 	
@@ -101,5 +106,5 @@ jQuery(document).ready(function($){
       
       //script uniform
 	  $("select, .checksty").uniform();
-	  
+  
 });

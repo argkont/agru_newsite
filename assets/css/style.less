@@ -433,6 +433,8 @@ body{
     margin:12px auto 0 auto;
     .borderadius(5px);
     .overflowhidd();
+	position:relative;
+	max-height:450px;
     h1.visible-desktop{
       color:@fontcolorh;
       font-size:60px;
@@ -443,6 +445,8 @@ body{
       width:340px;
       line-height:30px;
       color:@fontcolorh;
+	  max-height:87px;
+	  overflow:hidden;
       a{
         color:@fontcolorh;
         text-decoration:@nodecoration;
@@ -532,11 +536,12 @@ body{
     }
     //STY INCLUYE BOX
     .in_box{
-      width:48.8%;
+      width:450px;
       height:165px;
       position:absolute;
       background-color:@transbgw;
-      margin-top:266px;
+      margin-top:-3.6%;
+	  z-index:99;
       .btn_oc{
         width:20px;
         height:20px;
@@ -788,13 +793,14 @@ footer{
 
 #posts{
   .masonry-brick{
-    margin:10px 9px;
+   // margin:10px 9px;
   }
   .post{
-   max-width:318px;
+   width:318px;
    height:366px;
    background-color:@bgbox;
    .borderadius();
+   margin:10px 8px;
    //margin:20px 15px 10px 15px;
    .overflowhidd();
    a{
@@ -808,7 +814,7 @@ footer{
    }
    .cont_oferta{
      padding:5px 5px 0;
-     width:100%;
+     width:308px;
      h1{
        font-size:18px;
        color:@fontcolorh;
@@ -831,7 +837,7 @@ footer{
      }
    }
    .price_oferta{
-     width:100%;
+     width:308px;
      background-color:@bgred;
      //bottom:-22px;
      height:37px;
@@ -1086,7 +1092,7 @@ overflow:hidden;
      margin:10px auto !important;
    }
    .post{
-     width:318px;
+     width:310px;
      margin:0 auto;
      right:0;
    }
