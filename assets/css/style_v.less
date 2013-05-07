@@ -26,6 +26,7 @@
 @fontbolder:bold;
 @nodecoration:none;
 @combtn:pointer;
+@opacit:rgba(81,20,135, 0.8);
 
 /*COMMON CLASS*/
 .overflowhidd{
@@ -137,11 +138,11 @@
   background-position:18px top;
 }
 .icon_sell{
-  background-image:url('../img/icon_sell_v.png');
+  background-image:url('../img/icon_sell.png');
   width:22px;
   height:20px;
   margin-right:20px;
-  background-position:center top;
+  background-position:center bottom;
 }
 .icons_dash{
     background-image:url('../img/icons_dash_v.gif');
@@ -166,6 +167,12 @@
   height:13px;
   background-image:url('../img/icon_view_cup_v.gif');
   margin:4px 0 0 2px;
+}
+.icons_v{
+  width:16px;
+  height:16px;
+  background-image:url('../img/icons_blancos.gif');
+  margin:2px 5px 0 0;
 }
 /*LOADING FILES STY FORMAT*/
 .load{
@@ -201,6 +208,59 @@ body{
     height: 255px; /* same as the footer */
 }
 .container-fluid{
+  .oferta_viajes{
+  min-height:260px !important;
+  padding:30px 0 !important;
+  margin:10px 0;
+  a{
+    color:@linkscolor;
+    text-decoration:none;
+    h1{
+    text-transform:@upper;
+    font-size:48px;
+    width:593px;
+    line-height:59px;
+    @media (max-width:768px){
+      font-size:25px;
+      width:300px;
+      line-height:36px;
+    }
+    span{
+      background-color:@opacit;
+      padding:5px;
+      line-height:59px;
+      color:@linkscolor !important;
+        @media (max-width:768px){
+          line-height:20px;
+        }
+      }
+    }
+  }
+  h2{
+    width:593px;
+    font-size:60px;
+    color:@bgred;
+  }
+  .link_btn_cont{
+    width:593px;
+    .icon_fav_v{
+      background-position:-20px top;
+    }
+    .icon_view_v{
+      background-position:0 top;
+    }
+    a{
+      color:@linkscolor;
+      min-width:100px;
+      padding:5px;
+      background-color:@bgred;
+      text-transform:@upper;
+      float:right;
+      margin-left:10px;
+      font-size:18px;
+    }
+  }
+}
   .container{
   max-width:1007px;
   margin:@margincenter !important;
@@ -433,6 +493,8 @@ body{
     margin:12px auto 0 auto;
     .borderadius(5px);
     .overflowhidd();
+	position:relative;
+	max-height:450px;
     h1.visible-desktop{
       color:@fontcolorh;
       font-size:60px;
@@ -443,6 +505,8 @@ body{
       width:340px;
       line-height:30px;
       color:@fontcolorh;
+	  max-height:87px;
+	  overflow:hidden;
       a{
         color:@fontcolorh;
         text-decoration:@nodecoration;
@@ -532,11 +596,12 @@ body{
     }
     //STY INCLUYE BOX
     .in_box{
-      width:48.8%;
+      width:491px;
       height:165px;
       position:absolute;
       background-color:@transbgw;
-      margin-top:266px;
+      margin-top:-3.6%;
+	  z-index:99;
       .btn_oc{
         width:20px;
         height:20px;
@@ -545,7 +610,7 @@ body{
         position:absolute;
         top:10px;
         right:5px;
-        background-image:url('../img/icon_open_close_v.gif');
+        background-image:url('../img/icon_open_close.gif');
         background-position:center 6px;
         background-repeat:no-repeat;
         cursor:@combtn;
@@ -753,7 +818,7 @@ footer{
     }
     .close-cont_footer{
       a:hover{
-        background-color:transparent;
+        background-color:transparent !important;
       }
     }
   }
@@ -802,12 +867,14 @@ footer{
    // margin:10px 9px;
   }
   .post{
-   max-width:318px;
+   width:318px;
    height:366px;
    background-color:@bgbox;
    .borderadius();
-   //margin:20px 15px 10px 15px;
+   margin:10px 8px;
    .overflowhidd();
+	position:relative;
+	max-height:450px;
    a{
      display:block;
      width:100%;
@@ -821,7 +888,7 @@ footer{
    }
    .cont_oferta{
      padding:5px 5px 0;
-     width:100%;
+     width:308px;
      h1{
        font-size:18px;
        color:#727175;
@@ -847,7 +914,7 @@ footer{
      }
    }
    .price_oferta{
-     width:100%;
+     width:308px;
      background-color:@bgall;
      //bottom:-22px;
      height:37px;
@@ -1105,7 +1172,7 @@ overflow:hidden;
      margin:10px auto !important;
    }
    .post{
-     width:318px;
+     width:310px;
      margin:0 auto;
      right:0;
 	 .cont_oferta{
