@@ -1,0 +1,116 @@
+@import 'style.less';
+.cont_compra{
+	width:100%;
+	.borderadius();
+	background-color:@bgbox;
+	margin-top:10px;
+	text-transform:@upper;
+      a{
+        text-decoration:none;
+      }
+	 h1{
+		color:@fontcolorh;
+	 }
+      ul{
+        width:100%;
+        margin:0;
+        li{
+          width:220px;
+		  margin-right:28px;
+			  .cont_view{
+				  .borderadius(@radius:3px 3px 0 0;);
+				  background-color:@bgred;
+				  width:36%;
+				  margin-left:55%;
+				  padding:0 3%;
+				  a{
+					color:@linkscolor;
+				  }
+			  }
+			  .cont_date{
+			  width:96%;
+			  background-color:@bgred;
+			  color:@linkscolor;
+			  padding:3% 2% 0 2%;
+				.selector{
+					width:190px !important;
+				span{
+					width:167px !important;
+				}
+				}
+			  }
+			  .more_cup{
+				background-color:#ebebeb;
+				background-image:url('../img/bg_more_cup.gif');
+				background-repeat:no-repeat;
+				background-position:center;
+				height:262px;
+				.borderadius(@radius:3px 3px 0 0;);
+			}
+		}
+      }
+      .cup_box{
+        //height:162px;
+        .overflowhidd();
+        .borderadius();
+		border:1px solid @bgred;
+        h1{
+          font-size:12px;
+          color:@fontcolorh;
+          line-height:12px;
+          height:30px;
+        }
+        .info_dest{
+          background-color:@bgbox;
+          .cont_info_des{
+            width:100%;
+            color:@fontorange;
+            font-size:14px;
+            height:20px;
+          }
+        }
+        .dcto{
+            position:absolute;
+            z-index:9;
+        }
+        .cont_img_des{
+          height:95px;
+          .overflowhidd();
+        }
+      }
+      .tit_dest{
+        h1{
+          font-size:30px;
+          color:@fontcolorh;
+          margin:7px 0;
+        }
+      }
+	.gifcard{
+		background-color:@bgredo;
+		margin:10px 0;
+		h2{
+			color:@linkscolor;
+			font-size:24px;
+			line-height:22px;
+			padding-left:10px;
+		}
+		.btn_oc{
+        width:20px;
+        height:20px;
+        .borderadius(@radius:10px;);
+        background-color:@bgred;
+        background-image:url('../img/icon_open_close.gif');
+        background-position:center 6px;
+        background-repeat:no-repeat;
+        cursor:@combtn;
+		margin:8px 150px 0 0;
+      }
+	}
+	.conr_fom_pago{
+		ul{
+			li{
+				width:auto !important;
+			}
+		}
+	}
+}
