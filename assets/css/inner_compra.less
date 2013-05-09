@@ -5,6 +5,8 @@
 	background-color:@bgbox;
 	margin-top:10px;
 	text-transform:@upper;
+	overflow:hidden;
+	position:relative;s
       a{
         text-decoration:none;
       }
@@ -16,7 +18,9 @@
         margin:0;
         li{
           width:220px;
-		  margin-right:28px;
+		  height:262px;
+		  float:left;
+		  margin:0 28px 10px 0;
 			  .cont_view{
 				  .borderadius(@radius:3px 3px 0 0;);
 				  background-color:@bgred;
@@ -39,14 +43,13 @@
 				}
 				}
 			  }
-			  .more_cup{
-				background-color:#ebebeb;
-				background-image:url('../img/bg_more_cup.gif');
-				background-repeat:no-repeat;
-				background-position:center;
-				height:262px;
-				.borderadius(@radius:3px 3px 0 0;);
-			}
+		}
+		.more_cup{
+			background-color:#ebebeb;
+			background-image:url('../img/bg_more_cup.gif');
+			background-repeat:no-repeat;
+			background-position:center;
+			.borderadius();
 		}
       }
       .cup_box{
@@ -85,9 +88,10 @@
           margin:7px 0;
         }
       }
-	.gifcard{
+	.giftcard{
 		background-color:@bgredo;
 		margin:10px 0;
+		display:block;
 		h2{
 			color:@linkscolor;
 			font-size:24px;
@@ -103,14 +107,71 @@
         background-position:center 6px;
         background-repeat:no-repeat;
         cursor:@combtn;
-		margin:8px 150px 0 0;
+		margin:10px 10px 0 0;
+		@media (max-width:768px){
+			float:right;
+			margin-top:-5px;
+		}
       }
+	  .gift{
+		color:@linkscolor;
+		@media (max-width:768px){
+			padding: 5px;
+			width: 96%;
+		}
+		h1{
+			font-size:16px;
+			color:@linkscolor;
+			line-height:18px !important;
+			.paddingimportant();
+			margin-top:13px;
+		}
+		p{
+			font-size:12px;
+			.paddingimportant();
+			line-height:12px;
+		}
+		.gift_ver{
+			button{
+				background-color:@bgred !important;
+				color:@linkscolor;
+				font-size:14px;
+				background-image:none !important;
+				text-shadow:none !important;
+				.fontfutura();
+				text-transform:@upper;
+			}
+		}
+	  }
 	}
 	.conr_fom_pago{
 		ul{
+		@media (max-width:768px){
+			width:129px;
+			margin:0 auto !important;
+		}
 			li{
 				width:auto !important;
+				height:120px !important;
 			}
 		}
 	}
+	.term{
+		a{
+			color:@bgred;
+			text-decoration:none !important;
+		}
+	}
+	.btn_compr{
+		background-color:#C22820;
+		color:#FFFFFF;
+		cursor:pointer;
+		font-size:24px;
+		font-weight:bold;
+		min-width:150px;
+		text-transform:uppercase;
+  }
+  .checksty{
+		margin:10px !important;
+  }
 }

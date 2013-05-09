@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
 	  
 	  //script scroll creditos
       $a('.scroll_cre').slimScroll({
-      	  height: '470px',
+      	  height: '450px',
           width: '100%',
 		  color: '#801a1e',
 		  size: '5px',
@@ -119,7 +119,7 @@ jQuery(document).ready(function($){
 		  railOpacity: 1
       });
 	  
-	  //script scroll compras
+      //script scroll compras
 	   $a('.scroll_comp').slimScroll({
       	  height: '267px',
           width: '100%',
@@ -136,5 +136,10 @@ jQuery(document).ready(function($){
       
       //script uniform
 	  $("select, .checksty").uniform();
+	  
+	  //script toggle compra
+	  $a('.btn_oc').click(function(){
+		$a('.gift').slideToggle();
+	  });
   
 });
