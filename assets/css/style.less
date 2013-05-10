@@ -274,6 +274,7 @@ body{
           padding:0 3%;
           a{
           color:@linkscolor;
+          text-decoration:none;
           }
         }
         .cont_date{
@@ -281,12 +282,26 @@ body{
         background-color:@bgred;
         color:@linkscolor;
         padding:3% 2% 0 2%;
-        .selector{
-          width:190px !important;
-        span{
-          width:167px !important;
+          .selector{
+            width:190px !important;
+            span{
+              width:167px !important;
+            }
+          }
         }
-        }
+        .btn_delete{
+          .borderadius(@radius:10px;);
+          width:20px;
+          height:20px;
+          background-color:@bgredo;
+          float:right;
+          margin:3px;
+          cursor:@combtn;
+          text-indent:1000px;
+          overflow:hidden;
+          background-image:url('../img/icon_open_close.gif');
+          background-position:center -10px;
+          background-repeat:no-repeat;
         }
     }
     .more_cup{
@@ -294,7 +309,15 @@ body{
       background-image:url('../img/bg_more_cup.gif');
       background-repeat:no-repeat;
       background-position:center;
+      cursor:@combtn;
       .borderadius();
+      a{
+        display:block;
+        width:100%;
+        height:100%;
+        text-indent:-1000px;
+        overflow:hidden;
+      }
     }
       }
       .cup_box{
@@ -391,6 +414,8 @@ body{
   }
   .conr_fom_pago{
     ul{
+      margin-left:10% !important;
+      margin-bottom:5px;
     @media (max-width:768px){
       width:129px;
       margin:0 auto !important;

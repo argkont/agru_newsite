@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
 	  
 	  //script scroll creditos
       $a('.scroll_cre').slimScroll({
-      	  height: '450px',
+      	  height: '500px',
           width: '100%',
 		  color: '#801a1e',
 		  size: '5px',
@@ -139,7 +139,10 @@ jQuery(document).ready(function($){
 	  
 	  //script toggle compra
 	  $a('.btn_oc').click(function(){
-		$a('.gift').slideToggle();
+		$a('.gift').slideToggle(function(){
+			var $bgpo = $('.btn_oc');
+		$(this).is(':visible') ? $bgpo.css('background-position','center -10px') : $bgpo.css('background-position','center 5px');
+		});
 	  });
   
 });
