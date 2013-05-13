@@ -553,7 +553,11 @@ body{
       }
     }
     //STY CUPONES DASH
-  
+  #credi{
+  .slimScrollDiv{
+      margin-top:20px;
+    }
+  }
   .cont_cupdash{
       text-transform:@upper;
       a{
@@ -624,20 +628,20 @@ body{
     color:@linkscolor;
     background-color:@bgred;
     min-width:200px;
-    height:20px;
+    height:10px;
     .borderadius(@radius:0 0 0 10px;);
-    padding:20px 10px;
+    padding:30px 10px;
     margin:-10px -9px 10px 0;
-  font-size:20px;
-  position:absolute;
-  right:0;
-  top:5px;
-  @media (max-width:340px){
-    position:relative;
-    width:100%;
-    .borderadius(@radius:0px;) !important;
-    text-align:center;
-  }
+    font-size:20px;
+    position:absolute;
+    right:0;
+    top:5px;
+    @media (max-width:340px){
+      position:relative;
+      width:100%;
+      .borderadius(@radius:0px;) !important;
+      text-align:center;
+    }
     span{
       font-size:30px;
       font-weight:bold;
@@ -657,20 +661,20 @@ body{
       font-size:24px;
     }
     .btn_oc{
-        width:20px;
-        height:20px;
-        .borderadius(@radius:10px;);
-        background-color:@bgred;
-        background-image:url('../img/icon_open_close.gif');
-        background-position:center 6px;
-        background-repeat:no-repeat;
-        cursor:@combtn;
-    margin:8px 0 0 10px;
+      width:20px;
+      height:20px;
+      .borderadius(@radius:10px;);
+      background-color:@bgred;
+      background-image:url('../img/icon_open_close.gif');
+      background-position:center 6px;
+      background-repeat:no-repeat;
+      cursor:@combtn;
+      margin:8px 0 0 10px;
       }
-    .cont_credits_buy{
-    height:300px;
-    width:74%;
-    }
+      .cont_credits_buy{
+        height:300px;
+        width:74%;
+      }
     @media (max-width:480px){
     width:100% !important;
     margin:-45px 0 0 0 !important;
@@ -1005,11 +1009,9 @@ footer{
         color:@fontcolorh;
         max-width:52%;
         background-color:transparent;
-      }
-    }
-    .close-cont_footer{
-      a:hover{
-        background-color:transparent;
+        &:hover{
+          background-color:transparent !important;
+        }
       }
     }
   }
