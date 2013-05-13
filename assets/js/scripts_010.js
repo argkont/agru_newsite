@@ -106,7 +106,7 @@ jQuery(document).ready(function($){
 	  
 	  //script scroll creditos
       $a('.scroll_cre').slimScroll({
-      	  height: '500px',
+      	  height: '460px',
           width: '100%',
 		  color: '#801a1e',
 		  size: '5px',
